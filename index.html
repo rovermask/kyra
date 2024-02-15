@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiest Birthday KYRA</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height:100%;
+            width:100%;
+        }
+        .container{
+            position: relative;
+            top: -2px;
+            margin: 1px auto;
+            width: 425px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 810px;
+            background: url("background.jpg") no-repeat center/cover;
+        }
+        .innerContainer{
+            position: relative;
+            height: 770px;
+            top: -5px;
+            width: 250px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        .innerContainer .photoSection{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo{
+            margin: 5px;
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+        }
+        .photo img{
+            height: 220px;
+            filter: drop-shadow(0 0 0.8rem black);
+        }
+        #photo-1{
+            transform: translateY(-300px);
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-name: slideDown_1;
+            animation-fill-mode: forwards;
+        }
+        #photo-2{
+            transform: translateY(-600px);
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-name: slideDown_2;
+            animation-fill-mode: forwards;
+        }
+        #photo-3{
+            transform: translateY(-900px);
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-name: slideDown_3;
+            animation-fill-mode: forwards;
+        }
+        /* For Photos */
+        @keyframes slideDown_1 {
+            0% {
+                opacity: 0;
+                transform: translateY(-300px) rotate(360deg);
+            }
+            50% {
+                opacity: 0.3;
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes slideDown_2 {
+            0% {
+                opacity: 0;
+                transform: translateY(-600px) rotate(360deg);
+            }
+            50%{
+                opacity: 0.3;
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes slideDown_3 {
+            0% {
+                opacity: 0;
+                transform: translateY(-900px) rotate(360deg);
+            }
+            50%{
+                opacity: 0.3;
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        #happy{
+            transform: translateY(-800px);
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-name: slideDown;
+            animation-fill-mode: forwards;
+        }
+        #birthday{
+            transform: translateY(800px);
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-name: slideUp;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slideDown {
+            0%{
+                transform: translateY(-800px);
+            }
+            100%{
+                transform: translateY(-15px);
+            }
+        }
+        @keyframes slideUp {
+            0%{
+                transform: translateY(800px);
+            }
+            100%{
+                transform: translateY(-15px);
+            }
+        }
+        .label{
+            background: url("background.jpg");
+            /* background-color: black; */
+            top: -30px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            width: 64px;
+            height: 700px;
+            box-shadow: 0 0 0.8rem black;
+        }
+        .letters{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            color: goldenrod;
+            text-shadow: 1.3px 1.3px 2px black;
+            border-radius: 2px;
+        }
+        .innerContainer #name{
+            position: relative;
+            top: -8px;
+            border-radius: 2px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 0 0.8rem black;
+            transform: translateY(200px);
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-name: slideUpKyra;
+            animation-fill-mode: forwards;
+            background: url("background.jpg");
+        }
+        .lettersKyra{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            text-shadow: 1.3px 1.3px 2px black;
+            font-size: 30px;
+            width: 45px;
+            height: 25px;
+            color: goldenrod;
+        }
+        @keyframes slideUpKyra {
+            0%{
+                transform: translateY(800px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="label" id="happy">
+            <div class="letters">H</div>
+            <div class="letters">A</div>
+            <div class="letters">P</div>
+            <div class="letters">P</div>
+            <div class="letters">Y</div>
+        </div>
+        <div class="innerContainer">
+            <div class="photoSection">
+                <div class="photo" id="photo-1">
+                    <img src="IMG-20230330-WA0225.jpg">
+                </div>
+                <div class="photo" id="photo-2">
+                    <img src="IMG-20230330-WA0242.jpg">
+                </div>
+                <div class="photo" id="photo-3">
+                    <img src="IMG-20230330-WA0250.jpg">
+                </div>
+            </div>
+            <div id="name">
+                <div class="lettersKyra">K</div>
+                <div class="lettersKyra">Y</div>
+                <div class="lettersKyra">R</div>
+                <div class="lettersKyra">A</div>
+            </div>
+        </div>
+        <div class="label" id="birthday">
+            <div class="letters">B</div>
+            <div class="letters">I</div>
+            <div class="letters">R</div>
+            <div class="letters">T</div>
+            <div class="letters">H</div>
+            <div class="letters">D</div>
+            <div class="letters">A</div>
+            <div class="letters">Y</div>
+        </div>
+    </div>
+</body>
+</html>
